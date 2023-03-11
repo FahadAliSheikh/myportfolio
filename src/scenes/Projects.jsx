@@ -1,7 +1,6 @@
 import React from "react";
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import { Container } from "postcss";
 
 const container = {
   hidden: {},
@@ -18,6 +17,7 @@ const Project = ({ title }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
      bg-grey z-30 flex flex-col juslity-center items-center text-center p-16 text-deep-blue`;
   const projectTile = title.split(" ").join("-").toLowerCase();
+  console.log(projectTile);
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
@@ -28,7 +28,7 @@ const Project = ({ title }) => {
           you want
         </p>
       </div>
-      <img src={`../assets/${projectTile}.jpeg`} alt={projectTile} />
+      <img src={`../assets/projects/${projectTile}.jpeg`} alt={projectTile} />
     </motion.div>
   );
 };
@@ -56,9 +56,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          You guys put whatever text you want You guys put whatever text you
-          want You guys put whatever text you want You guys put whatever text
-          you want
+          A glimps of cool projects I have developed so far.
         </p>
       </motion.div>
       {/* PROJECTS */}
@@ -77,14 +75,14 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACS
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+          <Project title="Find My Adventure" />
+          <Project title="Chatingar" />
           {/* Row 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project title="Alrasheed Property Management" />
+          {/* <Project title="Project 4" />
+          <Project title="Project 5" /> */}
           {/* Row 3 */}
-          <Project title="Project 6" />
+          {/* <Project title="Project 6" /> */}
           <Project title="Project 7" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue

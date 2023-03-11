@@ -62,8 +62,8 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            you can put whatever text you want there, you can put whatever text
-            you want there, you can put whatever text you want there,
+            A software developer by heart, experienced in developing new
+            products from scratch and enhance existing projects.
           </p>
         </motion.div>
         {/* Call to actions*/}

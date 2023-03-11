@@ -3,6 +3,18 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
+import HTML from "../assets/html.png";
+import CSS from "../assets/css.png";
+import JavaScript from "../assets/javascript.png";
+import ReactImg from "../assets/react.png";
+import AngularImg from "../assets/angular1.png";
+
+import Node from "../assets/node.png";
+import Bootstrap from "../assets/bootstrap.png";
+import GitHub from "../assets/github.png";
+import Tailwind from "../assets/tailwind.png";
+import Mongo from "../assets/mongo.png";
+
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
@@ -26,9 +38,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            You guys put whatever text you want You guys put whatever text you
-            want You guys put whatever text you want You guys put whatever text
-            you want
+            Some of the cool technologies I have worked with.
           </p>
         </motion.div>
         <div className="mt-16 md:mt-0">
@@ -55,8 +65,7 @@ const MySkills = () => {
         </div>
       </div>
       {/* Skills */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
-        {/* Experience */}
+      {/* <div className="md:flex md:justify-between mt-16 gap-32">
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -81,7 +90,6 @@ const MySkills = () => {
             you want
           </p>
         </motion.div>
-        {/* Innovative */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -106,7 +114,6 @@ const MySkills = () => {
             you want
           </p>
         </motion.div>
-        {/* Imaginative */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -133,6 +140,53 @@ const MySkills = () => {
             you want
           </p>
         </motion.div>
+      </div> */}
+      <div className="md:flex md:justify-between mt-16 gap-32">
+        {/* Container */}
+
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
+            <p className="my-4">HTML</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={CSS} alt="HTML icon" />
+            <p className="my-4">CSS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={JavaScript} alt="HTML icon" />
+            <p className="my-4">JAVASCRIPT</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
+            <p className="my-4">REACT</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={AngularImg} alt="HTML icon" />
+            <p className="my-4">ANGULAR</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
+            <p className="my-4">GITHUB</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Node} alt="HTML icon" />
+            <p className="my-4">NODE JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Mongo} alt="HTML icon" />
+            <p className="my-4">MONGO DB</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
+            <p className="my-4">TAILWIND</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Bootstrap} alt="HTML icon" />
+            <p className="my-4">BOOTSTRAP</p>
+          </div>
+        </div>
+        {/* </div> */}
       </div>
     </section>
   );
