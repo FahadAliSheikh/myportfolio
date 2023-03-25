@@ -9,31 +9,31 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/linkedin.png" />
+        <img alt="linkedin-link" src="../assets/icons/linkedin.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com/"
+        href="https://twitter.com/fahd_sheikh_/"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/twitter.png" />
+        <img alt="linkedin-link" src="../assets/icons/twitter.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.facebook.com/"
+        href="https://www.facebook.com/Sheikh.Fahad.ul.Hassan/"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/facebook.png" />
+        <img alt="linkedin-link" src="../assets/icons/facebook.png" />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/fahad.ali.sheikh/"
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/instagram.png" />
+        <img alt="linkedin-link" src="../assets/icons/instagram.png" />
       </a>
     </div>
   );

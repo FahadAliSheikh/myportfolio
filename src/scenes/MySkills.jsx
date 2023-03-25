@@ -3,17 +3,19 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import AngularImg from "../assets/angular1.png";
+import HTML from "../assets/skills/html.png";
+import CSS from "../assets/skills/css.png";
+import JavaScript from "../assets/skills/javascript.png";
+import ReactImg from "../assets/skills/react.png";
+import AngularImg from "../assets/skills/angular1.png";
 
-import Node from "../assets/node.png";
-import Bootstrap from "../assets/bootstrap.png";
-import GitHub from "../assets/github.png";
-import Tailwind from "../assets/tailwind.png";
-import Mongo from "../assets/mongo.png";
+import Node from "../assets/skills/node.png";
+import Bootstrap from "../assets/skills/bootstrap.png";
+import GitHub from "../assets/skills/github.png";
+import Tailwind from "../assets/skills/tailwind.png";
+import Mongo from "../assets/skills/mongo.png";
+import NestJs from "../assets/skills/nestjs.png";
+import Typescript from "../assets/skills/typescript.png";
 
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -158,6 +160,10 @@ const MySkills = () => {
             <p className="my-4">JAVASCRIPT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Typescript} alt="HTML icon" />
+            <p className="my-4">TYPESCRIPT</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
             <p className="my-4">REACT</p>
           </div>
@@ -184,6 +190,10 @@ const MySkills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Bootstrap} alt="HTML icon" />
             <p className="my-4">BOOTSTRAP</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={NestJs} alt="HTML icon" />
+            <p className="my-4">NEST JS</p>
           </div>
         </div>
         {/* </div> */}
