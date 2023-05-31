@@ -21,17 +21,19 @@ const alrasheedDesc = `A property management system solution that helps property
 const dmechanicDesc = `A mobile application for mechanics and other relevant service providers.
  Here customers can find any sort of mechanics in the quickest possible time when they need their vehicles fixed. `;
 
-const Project = ({ title, description }) => {
+const Project = ({ title, description, link }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
      bg-grey z-30 flex flex-col juslity-center items-center text-center p-16 text-deep-blue`;
   const projectTile = title.split(" ").join("-").toLowerCase();
   return (
     <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7 ">{description}</p>
-      </div>
-      <img src={`../assets/projects/${projectTile}.jpeg`} alt={projectTile} />
+      <a href={link} target="blank">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">{title}</p>
+          <p className="mt-7 ">{description}</p>
+        </div>
+        <img src={`../assets/projects/${projectTile}.jpeg`} alt={projectTile} />
+      </a>
     </motion.div>
   );
 };
@@ -78,18 +80,23 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACS
           </div>
-          <Project title="Find My Adventure" description={fmaDesc} />
-          <Project title="Chatingar" description={chatingarDesc} />
+          <Project title="Find My Adventure" description={fmaDesc} link="#" />
+          <Project
+            title="Chatingar"
+            description={chatingarDesc}
+            link="https://chatingar.com"
+          />
           {/* Row 2 */}
           <Project
             title="Alrasheed Property Management"
             description={alrasheedDesc}
+            link="#"
           />
           {/* <Project title="Project 4" />
           <Project title="Project 5" /> */}
           {/* Row 3 */}
           {/* <Project title="Project 6" /> */}
-          <Project title="D Mechanic" description={dmechanicDesc} />
+          <Project title="D Mechanic" description={dmechanicDesc} link="#" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
