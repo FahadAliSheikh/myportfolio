@@ -7,15 +7,20 @@ import HTML from "../assets/skills/html.png";
 import CSS from "../assets/skills/css.png";
 import JavaScript from "../assets/skills/javascript.png";
 import ReactImg from "../assets/skills/react.png";
+import NextImg from "../assets/skills/nextjs.png";
+import ShadcnImg from "../assets/skills/shadcnui.png";
 import AngularImg from "../assets/skills/angular1.png";
 
 import Node from "../assets/skills/node.png";
+import EpressImg from "../assets/skills/express.png";
 import Bootstrap from "../assets/skills/bootstrap.png";
 import GitHub from "../assets/skills/github.png";
 import Tailwind from "../assets/skills/tailwind.png";
 import Mongo from "../assets/skills/mongo.png";
+import Mysql from "../assets/skills/mysql.png";
 import NestJs from "../assets/skills/nestjs.png";
 import Typescript from "../assets/skills/typescript.png";
+import Puppeteer from "../assets/skills/puppeteer.png";
 
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -165,7 +170,15 @@ const MySkills = () => {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
-            <p className="my-4">REACT</p>
+            <p className="my-4">REACT JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={NextImg} alt="HTML icon" />
+            <p className="my-4">Next JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={ShadcnImg} alt="HTML icon" />
+            <p className="my-4">Shadcn ui</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={AngularImg} alt="HTML icon" />
@@ -180,8 +193,20 @@ const MySkills = () => {
             <p className="my-4">NODE JS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={EpressImg} alt="HTML icon" />
+            <p className="my-4">EXPRESS JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={NestJs} alt="HTML icon" />
+            <p className="my-4">NEST JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Mongo} alt="HTML icon" />
             <p className="my-4">MONGO DB</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Mysql} alt="HTML icon" />
+            <p className="my-4">MYSQL</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
@@ -192,8 +217,8 @@ const MySkills = () => {
             <p className="my-4">BOOTSTRAP</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={NestJs} alt="HTML icon" />
-            <p className="my-4">NEST JS</p>
+            <img className="w-20 mx-auto" src={Puppeteer} alt="HTML icon" />
+            <p className="my-4">PUPPETEER</p>
           </div>
         </div>
         {/* </div> */}
